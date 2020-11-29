@@ -1,5 +1,7 @@
 # The Best OSCP Cheatsheet... Ever...
-The goal of this repository is not to spoil or literally cheat on the OSCP Exam.  The real goal of this repository is to save you as much time as possible when enumerating and exploiting potential low hanging fruit.  It's very easy to get caught up in the weeds of debugging and troubleshooting payloads and lose out on all your time to pass teh exam.
+The goal of this repository is not to spoil or literally cheat on the OSCP Exam.  The real goal of this repository is to save you as much time as possible when enumerating and exploiting potential low hanging fruit.  It's very easy to get caught up in the weeds of debugging and troubleshooting payloads and lose out on all your time to pass the exam.
+
+You're on your own when the exploits start flying--I'll try to include potential tips and tricks you can try but it's up to you to fully understand the proper material before starting the exam.
 
 ## Start Here
 | # | Step | Description |
