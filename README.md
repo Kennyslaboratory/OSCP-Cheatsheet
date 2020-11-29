@@ -14,15 +14,15 @@ You're on your own when the exploits start flying--I'll try to include potential
 ## Discover
 First, you must enumerate the attack surface of the box.  I have a curated list for each possible scenario you might run into.  The majority of recon is about following a checklist you are comfortable with, prioritizing your scanning efforts, and documenting your findings well.  Get a high-level overview of the network and the available attack surface before diving into the weeds with exploitation, evasion, and data exfiltration. 
 
-**
 
-**nmap**
+### nmap
 | # | Command | Description |
 | --- | --- | --- |
 | 1 | `nmap -sn 10.11.1.0/24` | Quick SYN scan without looking for open ports  |
 | 2 | `nmap -sV -O -F --version-light 10.11.1.` | Quick OS Detection & Port Scan  |
 
-**Banner Grabbing**
+### Banner Grabbing
 
-**DNS Zone Transfer**
+
+### DNS Zone Transfer
 
