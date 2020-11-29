@@ -19,7 +19,8 @@ First, you must enumerate the attack surface of the box.  I have a curated list 
 **nmap**
 | # | Command | Description |
 | --- | --- | --- |
-| 1 | `nmap -sn 10.0.0.0/24` | Quick SYN scan without looking for open ports  |
+| 1 | `nmap -sn 10.11.1.0/24` | Quick SYN scan without looking for open ports  |
+| 2 | `nmap -sV -O -F --version-light 10.11.1.` | Quick OS Detection & Port Scan  |
 
 **Banner Grabbing**
 
