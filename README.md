@@ -3,7 +3,11 @@ The goal of this repository is not to spoil the OSCP Exam, it's to save you as m
 
 You're on your own when the exploits start flying--I'll try to include potential tips and tricks you can try but it's up to you to fully understand the proper material before starting the exam.
 
+-------------
+
 ![Hacker](lol_hoody.jpg)
+
+-------------
 
 ## Start Here
 | # | Step | Description |
