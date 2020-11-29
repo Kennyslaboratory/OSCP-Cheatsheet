@@ -12,7 +12,7 @@ You're on your own when the exploits start flying--I'll try to include potential
 
 -------------
 ## Discover
-First, you must enumerate the attack surface of the box.  I have a curated list for each possible scenario you might run into.  The majority of recon is about following a checklist you are comfortable with, prioritizing your scanning efforts, and documenting you finding well.  Also get a high-level overview of the network and the available attack surface before getting into the weed with exploitation, evasion, and data exfiltration. 
+First, you must enumerate the attack surface of the box.  I have a curated list for each possible scenario you might run into.  The majority of recon is about following a checklist you are comfortable with, prioritizing your scanning efforts, and documenting your findings well.  Get a high-level overview of the network and the available attack surface before diving into the weeds with exploitation, evasion, and data exfiltration. 
 
 **
 
