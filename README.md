@@ -1,5 +1,5 @@
 # The Best OSCP Cheatsheet... Ever...
-Footprinting, Reconocise, and Enumeration is the key to passing the OSCP.  
+The goal of this repository is not to spoil or literally cheat on the OSCP Exam.  The real goal of this repository is to save you as much time as possible when enumerating and exploiting potential low hanging fruit.  It's very easy to get caught up in the weeds of debugging and troubleshooting payloads and lose out on all your time to pass teh exam.
 
 ## Start Here
 | # | Step | Description |
@@ -10,15 +10,16 @@ Footprinting, Reconocise, and Enumeration is the key to passing the OSCP.
 
 -------------
 ## Discover
-Reconnaissance, Footprinting, Scanning, Banner Grabbing, Enumeration, etc.
+First, you must enumerate the attack surface of the box.  I have a curated list for each possible scenario you might run into.  The majority of recon is about following a checklist you are comfortable with, prioritizing your scanning efforts, and documenting you finding well.  Also get a high-level overview of the network and the available attack surface before getting into the weed with exploitation, evasion, and data exfiltration. 
+
+**
 
 **nmap**
-
-Quick IP Scan _(no port scan)_
-```nmap
-nmap -sn 10.0.0.0/24
-```
+| # | Command | Description |
+| --- | --- | --- |
+| 1 | `nmap -sn 10.0.0.0/24` | Quick SYN scan without looking for open ports  |
 
 **Banner Grabbing**
 
 **DNS Zone Transfer**
+
