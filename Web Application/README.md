@@ -27,10 +27,8 @@ sqlmap -r sqlmap_request2 -p txtLoginID
 /var/log/dmessage
 /var/mail/root
 /var/spool/cron/crontabs/root
-cat /etc/*-release
-  cat /etc/lsb-release      # Debian based
-  cat /etc/redhat-release   # Redhat based
-Location of log files
+
+...log files
 ```
 
 ## Exfiltrate Windows Files - Local File Inclusion
