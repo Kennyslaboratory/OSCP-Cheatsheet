@@ -21,28 +21,37 @@ You're on your own when the exploits start flying--I'll try to include potential
 Before you can follow my exploitation tips and tricks, you'll need to enumerate what's on the network.
 
 ## Automated OSCP Enumeration Script
-Practice with and **use this automated enumeration script create by Reconnoitre**.  It's not a commerical grade tool and all it's really doing is using tools pre-installed onto Kali to scan for machines and enumerate vulenrabilites.
-https://github.com/codingo/Reconnoitre
+Here are some of the best automated recon scripts that you can use during your exam.  The OSCP does not allow for automated exploitation but it you won't be penalized for using automated enumeration tools.
+| # | Resource | Description |
+| --- | --- | --- |
+| 1 | https://github.com/codingo/Reconnoitre | A tool specifically create for scanning OSCP labs. |
+| 2 | https://github.com/Tib3rius/AutoRecon | A tool for scanning both CTFs and OSCP. |
 
 
 ### Nmap
 | # | Command | Description |
 | --- | --- | --- |
 | 1 | `nmap -sn 10.11.1.0/24` | Quick SYN scan without looking for open ports  |
-| 2 | `nmap -sV -O -F --version-light 10.11.1.` | Quick OS Detection & Port Scan  |
+| 2 | `nmap -sV -O -F --version-light 10.11.1.10` | Quick OS Detection & Port Scan  |
 
 ### Nmap Scripts
 | # | Command | Type | Description |
-| --- | --- | --- | --- |
-| 1 | `smb-vuln-cve2009-3103.nse` | SMBv2  | https://cvedetails.com/cve/CVE-2009-3103/ - Windows Vista SP1/SP2 and Server 2008 (x86) |
-| 2 | `smb-vuln-ms06-025.nse` | SMB  | ... |
-| 3 | `smb-vuln-ms07-029.nse` | SMB  | ... |
-| 4 | `smb-vuln-ms08-067.nse` | SMB  | ... |
-| 5 | `smb-vuln-ms10-054.nse` | SMB  | ... |
-| 6 | `smb-vuln-ms10-061.nse` | SMB  | ... |
-| 7 | `smb-vuln-ms17-010.nse` | SMB  | ... |
-| 8 | `smb-enum-shares.nse` | SMB Shares Enum  | ... |
-| 9 | `smb-enum-users.nse` | SMB Users Enum | ... |
+| --- | --- | --- |
+| [smb-check-vulns.nse](https://github.com/mubix/tools/blob/master/nmap/scripts/smb-check-vulns.nse) | SMB  | Scans for multiple SMB vulnerabilities. |
+| [smb-vuln-cve2009-3103.nse](https://www.exploit-db.com/exploits/9594) | SMBv2  | Windows Vista SP1/SP2 and Server 2008 (x86) |
+| [smb-vuln-ms06-025.nse](https://www.exploit-db.com/exploits/1940) | SMB  | Windows 2000 and Windows XP (x86) |
+| [smb-vuln-ms07-029.nse](https://www.exploit-db.com/exploits/16366) | SMB  | Windows 2003 SP1/SP2 |
+| [smb-vuln-ms08-067.nse](https://www.exploit-db.com/exploits/40279) | SMB  | Windows XP |
+| [smb-vuln-ms10-054.nse](https://www.exploit-db.com/exploits/14607) | SMB  | XP, Vista, 7 |
+| [smb-vuln-ms10-061.nse](https://www.exploit-db.com/exploits/16361) | SMB, Print Spooler | XP, Vista, 7 |
+| [smb-vuln-ms17-010.nse](https://www.exploit-db.com/exploits/42315) | SMB  | EternalBlue.  XP, Vista, 7, 8.1, 10 |
+| [smb-enum-shares.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-shares.nse) | SMB Shares Enum  | Enumerates SMB Shares |
+| [smb-enum-users.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-users.nse) | SMB Users Enum | Attempts to enumerate the users on a remote Windows system |
+
+*Example Nmap Script*
+```
+nmap -p 445 -vv --script=[script.nse] 10.10.10.10
+```
 
 ## Linux Enumeration
 ```
