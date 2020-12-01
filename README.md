@@ -21,11 +21,29 @@ You're on your own when the exploits start flying--I'll try to include potential
 First, you must enumerate the attack surface of the box.  I have a curated list for each possible scenario you might run into.  The majority of recon is about following a checklist you are comfortable with, prioritizing your scanning efforts, and documenting your findings well.  Get a high-level overview of the network and the available attack surface before diving into the weeds with exploitation, evasion, and data exfiltration. 
 
 
-### nmap
+### Nmap
 | # | Command | Description |
 | --- | --- | --- |
 | 1 | `nmap -sn 10.11.1.0/24` | Quick SYN scan without looking for open ports  |
 | 2 | `nmap -sV -O -F --version-light 10.11.1.` | Quick OS Detection & Port Scan  |
+
+### Nmap Scripts
+| # | Command | Type | Description |
+| --- | --- | --- | --- |
+| 1 | `smb-vuln-cve2009-3103.nse` | SMBv2  | https://cvedetails.com/cve/CVE-2009-3103/ - Windows Vista SP1/SP2 and Server 2008 (x86) |
+| 2 | `smb-vuln-ms06-025.nse` | SMB  | ... |
+| 3 | `smb-vuln-ms07-029.nse` | SMB  | ... |
+| 4 | `smb-vuln-ms08-067.nse` | SMB  | ... |
+| 5 | `smb-vuln-ms10-054.nse` | SMB  | ... |
+| 6 | `smb-vuln-ms10-061.nse` | SMB  | ... |
+| 7 | `smb-vuln-ms17-010.nse` | SMB  | ... |
+| 8 | `smb-enum-shares.nse` | SMB Shares Enum  | ... |
+| 9 | `smb-enum-users.nse` | SMB Users Enum | ... |
+
+## Linux Enumeration
+```
+enum4linux -a 10.10.10.10
+```
 
 ### Banner Grabbing
 
