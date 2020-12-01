@@ -1,19 +1,11 @@
-# Attacking Web Applications
-
-## Burp Extentions
+# Tools
+  * Burp Spidering
+  * Nikto
+  * Dirbuster
+  * Dirb
 
 
 ## SQL Injection
-
-
-## SQLMap Cheatsheet
-```
-#GET Request Injection
-sqlmap –cookie=”OV3176019645=7a1p0ilqfud0s0dhdf0p5pqog4″ –url=”http://10.xx.xx.73:8080/php/index.php?tg=site&idx=menusite&item=2&#8243; -p item –proxy=http://127.0.0.1:8081
-
-#POST Request Injection
-sqlmap -r sqlmap_request2 -p txtLoginID
-```
 
 
 ## Exfiltrate Linux Files - Local File Inclusion
@@ -43,7 +35,7 @@ sqlmap -r sqlmap_request2 -p txtLoginID
 
 ## PHP CGI-Bin Exploits
 
-**Exploiting ShellShock via CGI-Bin**
+**Exploiting ShellShock via CGI-Bin - [CVE-2014-6271]**
 <br/>
 ![Shell Shock via User-Agent Header](./img/SHELL_SHOCK.png)
 ```
