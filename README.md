@@ -24,8 +24,8 @@ Before you can follow my exploitation tips and tricks, you'll need to enumerate 
 Here are some of the best automated recon scripts that you can use during your exam.  The OSCP does not allow for automated exploitation but it you won't be penalized for using automated enumeration tools.
 | # | Resource | Description |
 | --- | --- | --- |
-| 1 | https://github.com/codingo/Reconnoitre | A tool specifically create for scanning OSCP labs. |
-| 2 | https://github.com/Tib3rius/AutoRecon | A tool for scanning both CTFs and OSCP. |
+| 1 | [Reconnoitre](https://github.com/codingo/Reconnoitre) | A tool specifically create for scanning OSCP labs. |
+| 2 | [AutoRecon](https://github.com/Tib3rius/AutoRecon) | A tool for scanning both CTFs and OSCP. |
 
 
 ### Nmap
@@ -39,14 +39,14 @@ Here are some of the best automated recon scripts that you can use during your e
 | --- | --- | --- |
 | [smb-check-vulns.nse](https://github.com/mubix/tools/blob/master/nmap/scripts/smb-check-vulns.nse) | SMB  | Scans for multiple SMB vulnerabilities. |
 | [smb-vuln-cve2009-3103.nse](https://www.exploit-db.com/exploits/9594) | SMBv2  | Windows Vista SP1/SP2 and Server 2008 (x86) |
-| [smb-vuln-ms06-025.nse](https://www.exploit-db.com/exploits/1940) | SMB  | Windows 2000 and Windows XP (x86) |
-| [smb-vuln-ms07-029.nse](https://www.exploit-db.com/exploits/16366) | SMB  | Windows 2003 SP1/SP2 |
-| [smb-vuln-ms08-067.nse](https://www.exploit-db.com/exploits/40279) | SMB  | Windows XP |
-| [smb-vuln-ms10-054.nse](https://www.exploit-db.com/exploits/14607) | SMB  | XP, Vista, 7 |
-| [smb-vuln-ms10-061.nse](https://www.exploit-db.com/exploits/16361) | SMB, Print Spooler | XP, Vista, 7 |
-| [smb-vuln-ms17-010.nse](https://www.exploit-db.com/exploits/42315) | SMB  | EternalBlue.  XP, Vista, 7, 8.1, 10 |
-| [smb-enum-shares.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-shares.nse) | SMB Shares Enum  | Enumerates SMB Shares |
-| [smb-enum-users.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-users.nse) | SMB Users Enum | Attempts to enumerate the users on a remote Windows system |
+| [smb-vuln-ms06-025.nse](https://www.exploit-db.com/exploits/1940) | SMB | Windows 2000 and Windows XP (x86) |
+| [smb-vuln-ms07-029.nse](https://www.exploit-db.com/exploits/16366) | SMB | Windows 2003 SP1/SP2 |
+| [smb-vuln-ms08-067.nse](https://www.exploit-db.com/exploits/40279) | SMB | Windows XP |
+| [smb-vuln-ms10-054.nse](https://www.exploit-db.com/exploits/14607) | SMB | XP, Vista, 7 |
+| [smb-vuln-ms10-061.nse](https://www.exploit-db.com/exploits/16361) | SMB | XP, Vista, 7 |
+| [smb-vuln-ms17-010.nse](https://www.exploit-db.com/exploits/42315) | SMB | EternalBlue.  XP, Vista, 7, 8.1, 10 |
+| [smb-enum-shares.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-shares.nse) | SMB Shares Enum | Enumerates SMB Shares |
+| [smb-enum-users.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-users.nse) | SMB Users Enum | Attempts to enumerate Windows users |
 
 *Example Nmap Script*
 ```
