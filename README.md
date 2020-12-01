@@ -61,7 +61,9 @@ enum4linux -a 10.10.10.10
 ```
 
 ### Banner Grabbing
-
+| # | Command | Description |
+| --- | --- | --- |
+| 1 | /dev/tcp/$ip/$port | If nmap didn't banner grab or it's not installed. |
 
 ### DNS Zone Transfer
 
