@@ -36,7 +36,7 @@ Here are some of the best automated recon scripts that you can use during your e
 
 ### Nmap Scripts
 | # | Command | Type | Description |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | [smb-check-vulns.nse](https://github.com/mubix/tools/blob/master/nmap/scripts/smb-check-vulns.nse) | SMB  | Scans for multiple SMB vulnerabilities. |
 | [smb-vuln-cve2009-3103.nse](https://www.exploit-db.com/exploits/9594) | SMBv2  | Windows Vista SP1/SP2 and Server 2008 (x86) |
 | [smb-vuln-ms06-025.nse](https://www.exploit-db.com/exploits/1940) | SMB | Windows 2000 and Windows XP (x86) |
