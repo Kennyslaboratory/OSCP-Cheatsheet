@@ -38,15 +38,15 @@ Here are some of the best automated recon scripts that you can use during your e
 | # | Script | Type | Description |
 | --- | --- | --- | --- |
 | 1 | [smb-check-vulns.nse](https://github.com/mubix/tools/blob/master/nmap/scripts/smb-check-vulns.nse) | SMB  | Scans for multiple SMB vulnerabilities. |
-| 2 | [smb-vuln-cve2009-3103.nse](https://www.exploit-db.com/exploits/9594) | SMBv2  | Windows Vista SP1/SP2 and Server 2008 (x86) |
+| 2 | [smb-vuln-cve2009-3103.nse](https://www.exploit-db.com/exploits/9594) | SMB  | Windows Vista SP1/SP2 and Server 2008 (x86) |
 | 3 | [smb-vuln-ms06-025.nse](https://www.exploit-db.com/exploits/1940) | SMB | Windows 2000 and Windows XP (x86) |
 | 4 | [smb-vuln-ms07-029.nse](https://www.exploit-db.com/exploits/16366) | SMB | Windows 2003 SP1/SP2 |
 | 5 | [smb-vuln-ms08-067.nse](https://www.exploit-db.com/exploits/40279) | SMB | Windows XP |
 | 6 | [smb-vuln-ms10-054.nse](https://www.exploit-db.com/exploits/14607) | SMB | XP, Vista, 7 |
 | 7 | [smb-vuln-ms10-061.nse](https://www.exploit-db.com/exploits/16361) | SMB | XP, Vista, 7 |
 | 8 | [smb-vuln-ms17-010.nse](https://www.exploit-db.com/exploits/42315) | SMB | EternalBlue.  XP, Vista, 7, 8.1, 10 |
-| 9 | [smb-enum-shares.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-shares.nse) | SMB Shares Enum | Enumerates SMB Shares |
-| 10 | [smb-enum-users.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-users.nse) | SMB Users Enum | Attempts to enumerate Windows users |
+| 9 | [smb-enum-shares.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-shares.nse) | SMB | Enumerates SMB Shares |
+| 10 | [smb-enum-users.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-users.nse) | SMB | Attempts to enumerate Windows users |
 
 *Example Nmap Script*
 ```
