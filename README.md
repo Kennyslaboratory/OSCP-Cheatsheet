@@ -34,7 +34,7 @@ Use these automated tools to save as much time as possible when enumerating vuln
 | 1 | `nmap -sn 10.11.1.0/24` | Quick SYN scan without looking for open ports  |
 | 2 | `nmap -sV -O -F --version-light 10.11.1.10` | Quick OS Detection & Port Scan  |
 
-### Nmap Scripts
+### Nmap Enum Scripts
 | # | Script | Type | Description |
 | --- | --- | --- | --- |
 | 1 | [smb-check-vulns.nse](https://github.com/mubix/tools/blob/master/nmap/scripts/smb-check-vulns.nse) | SMB  | Scans for multiple SMB vulnerabilities. |
