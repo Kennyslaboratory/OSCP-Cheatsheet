@@ -17,16 +17,18 @@ You're on your own when the exploits start flying--I'll try to include potential
 | 3 | `Select` | Select the specific cheatsheet for the box you are attacking |
 
 -------------
-## 1 - Discover
+# 1 - Discover
 Before you can follow my exploitation tips and tricks, you'll need to enumerate what's on the network.
 
-### Automated OSCP Enumeration Script
+## Automated OSCP Enumeration Script
 Use these automated tools to save as much time as possible when enumerating vulnerabilities.
 | # | Resource | Description |
 | --- | --- | --- |
-| 1 | [Reconnoitre](https://github.com/codingo/Reconnoitre) | A tool specifically create for scanning OSCP labs. |
+| 1 | [Reconnoitre](https://github.com/codingo/Reconnoitre) | A tool specifically created for scanning OSCP labs. |
 | 2 | [AutoRecon](https://github.com/Tib3rius/AutoRecon) | A tool for scanning both CTFs and OSCP. |
 
+
+## Manual Scanning Commands
 
 ### Nmap
 | # | Command | Description |
