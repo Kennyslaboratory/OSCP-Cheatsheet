@@ -18,7 +18,11 @@ You're on your own when the exploits start flying--I'll try to include potential
 
 -------------
 ## 1 - Discover
-First, you must enumerate the attack surface of the box.  I have a curated list for each possible scenario you might run into.  The majority of recon is about following a checklist you are comfortable with, prioritizing your scanning efforts, and documenting your findings well.  Get a high-level overview of the network and the available attack surface before diving into the weeds with exploitation, evasion, and data exfiltration. 
+Before you can follow my exploitation tips and tricks, you'll need to enumerate what's on the network.
+
+## Automated OSCP Enumeration Script
+Practice with and **use this automated enumeration script create by Reconnoitre**.  It's not a commerical grade tool and all it's really doing is using tools pre-installed onto Kali to scan for machines and enumerate vulenrabilites.
+https://github.com/codingo/Reconnoitre
 
 
 ### Nmap
