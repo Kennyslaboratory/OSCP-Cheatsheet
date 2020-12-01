@@ -20,8 +20,8 @@ You're on your own when the exploits start flying--I'll try to include potential
 ## 1 - Discover
 Before you can follow my exploitation tips and tricks, you'll need to enumerate what's on the network.
 
-## Automated OSCP Enumeration Script
-Here are some of the best automated recon scripts that you can use during your exam.  The OSCP does not allow for automated exploitation but it you won't be penalized for using automated enumeration tools.
+### Automated OSCP Enumeration Script
+Use these automated tools to save as much time as possible when enumerating vulnerabilities.
 | # | Resource | Description |
 | --- | --- | --- |
 | 1 | [Reconnoitre](https://github.com/codingo/Reconnoitre) | A tool specifically create for scanning OSCP labs. |
