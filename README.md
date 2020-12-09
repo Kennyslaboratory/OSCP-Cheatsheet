@@ -21,7 +21,8 @@ You're on your own when the exploits start flying--I'll try to include potential
 Before you can follow my exploitation tips and tricks, you'll need to enumerate what's on the network.
 
 ## Automated OSCP Enumeration Script
-Use these automated tools to save as much time as possible when enumerating vulnerabilities.
+Use these automated tools to save as much time as possible when enumerating vulnerabilities!
+
 | # | Resource | Description |
 | --- | --- | --- |
 | 1 | [Reconnoitre](https://github.com/codingo/Reconnoitre) | A tool specifically created for scanning OSCP labs. |
