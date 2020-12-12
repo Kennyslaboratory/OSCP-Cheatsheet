@@ -67,4 +67,7 @@ enum4linux -a 10.10.10.10
 | 1 | /dev/tcp/$ip/$port | If nmap didn't banner grab or it's not installed. |
 
 ### DNS Zone Transfer
+| # | Command | Description |
+| --- | --- | --- |
+| 1 | `dig example.com any` | View DNS records on a domain. |
 
