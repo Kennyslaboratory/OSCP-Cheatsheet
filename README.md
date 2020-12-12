@@ -70,4 +70,4 @@ enum4linux -a 10.10.10.10
 | # | Command | Description |
 | --- | --- | --- |
 | 1 | `dig example.com any` | View DNS records on a domain. |
-
+| 2 | `dnsrecon -d example.com` | Multiple queries to DNS server that enumerates DNS records. |
