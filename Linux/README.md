@@ -3,6 +3,8 @@
 ### Most Common CVEs used on CTFs
 | # | CVE | Description |
 | --- | --- | --- |
+| 1 | Shellshock | Privilage esculation exploit.  Can be used against CGI-Bin also. |
+| 2 | [SambaCry](https://redteamzone.com/EternalRed/) | Also known as EternalRed.  This is the EthernalBlue of Linux SMB File Servers. |
 
 ### Post Exploitation - Prev. Esculation
 
