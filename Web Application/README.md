@@ -17,18 +17,18 @@ In versions of PHP below 5.3 can terminate with a null byte
 ```
 
 ## Enumerating LFI
-
+*Code:*
 ```php
 <?php
-$file = $_GET[‘file’];
-if(isset($file))
-{
-include(“pages/$file”);
-}
-else
-{
-include(“index.php”);
-}
+  $file = $_GET[‘file’];
+  if(isset($file))
+  {
+    include(“pages/$file”);
+  }
+  else
+  {
+    include(“index.php”);
+  }
 ?>
 ```
 
