@@ -18,8 +18,18 @@ In versions of PHP below 5.3 can terminate with a null byte
 
 ## Enumerating LFI
 
-```
-...
+```php
+<?php
+$file = $_GET[‘file’];
+if(isset($file))
+{
+include(“pages/$file”);
+}
+else
+{
+include(“index.php”);
+}
+?>
 ```
 
 ## Exfiltrate Linux Files
