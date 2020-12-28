@@ -34,8 +34,11 @@ Use these automated tools to save as much time as possible when enumerating vuln
 ### Nmap
 | # | Command | Description |
 | --- | --- | --- |
-| 1 | `nmap -sn 10.11.1.0/24` | Quick SYN scan without looking for open ports  |
-| 2 | `nmap -sV -O -F --version-light 10.11.1.10` | Quick OS Detection & Port Scan  |
+| 1 | `nmap -sn 10.11.1.0/24` | Enum IPs. Quick SYN scan without looking for open ports.  |
+| 2 | `nmap -sC -sV -vv -oA quick 10.11.1.4` | Quick TCP scan on target IP |
+| 3 | `nmap -sU -sV -vv -oA quick_udp 10.11.1.7` | Quick UDP scan on target IP |
+| 4 | `nmap -sV -O -F --version-light 10.11.1.6` | Quick OS Detection & Port Scan on target IP  |
+| 5 | `nmap -sC -sV -p- -vv -oA full 10.11.1.8` | Very long and aggressive TCP scan on target IP |
 
 ### Nmap Enum Scripts
 | # | Script | Type | Description |
@@ -51,14 +54,14 @@ Use these automated tools to save as much time as possible when enumerating vuln
 | 9 | [smb-enum-shares.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-shares.nse) | SMB | Enumerates SMB Shares |
 | 10 | [smb-enum-users.nse](https://github.com/nmap/nmap/blob/master/scripts/smb-enum-users.nse) | SMB | Attempts to enumerate Windows users |
 
-*Example Nmap Script*
+*Example: Using an Nmap Script*
 ```
 nmap -p 445 -vv --script=[script.nse] 10.10.10.10
 ```
 
 ## Linux Enumeration
 ```
-enum4linux -a 10.10.10.10
+enum4linux -a 10.11.1.9
 ```
 
 ### Banner Grabbing
