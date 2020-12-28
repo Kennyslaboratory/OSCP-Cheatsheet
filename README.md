@@ -40,6 +40,19 @@ Use these automated tools to save as much time as possible when enumerating vuln
 | 4 | `nmap -sV -O -F --version-light 10.11.1.6` | Quick OS Detection & Port Scan on target IP  |
 | 5 | `nmap -sC -sV -p- -vv -oA full 10.11.1.8` | Very long and aggressive TCP scan on target IP |
 
+### Interesting Ports
+| --- | --- |
+| Port # | Description |
+| 21 | FTP server, unencrypted. |
+| 22 | SSH server, can be connected to via SSH |
+| 23 | Telnet. Basically an unencrypted SSH |
+| 25 | SMTP - Email sending service. [Query it]() to enum email addresses? |
+| 80 | HTTP Server, hosting website? Try visiting IP with web browser |
+| 445 | SMB service, likely vulnerable to an SMB RCE |
+| 3306 | MySQL Database.  Attempt to connect it? |
+| 3389 | Listening for RDP connection |
+
+
 ### Nmap Enum Scripts
 | # | Script | Type | Description |
 | --- | --- | --- | --- |
@@ -74,3 +87,8 @@ enum4linux -a 10.11.1.9
 | --- | --- | --- |
 | 1 | `dig example.com any` | View DNS records on a domain. |
 | 2 | `dnsrecon -d example.com` | Multiple queries to DNS server that enumerates DNS records. |
+
+### SMTP Email Enumeration
+| --- | --- |
+| 1 | `nmap -script smtp-commands.nse 10.11.1.41` | Scan for possible SMTP commands that can be executed |
+| 2 | `smtp-user-enum -M VRFY -U /root/sectools/SecLists/Usernames/Names/names.txt -t 10.11.1.41` | SMTP Enum. `-M` for mode. `-U` for userlist. `-t` for target |
