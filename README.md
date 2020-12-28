@@ -89,6 +89,7 @@ enum4linux -a 10.11.1.9
 | 2 | `dnsrecon -d example.com` | Multiple queries to DNS server that enumerates DNS records. |
 
 ### SMTP Email Enumeration
+| # | Command | Description |
 | --- | --- |
 | 1 | `nmap -script smtp-commands.nse 10.11.1.41` | Scan for possible SMTP commands that can be executed |
 | 2 | `smtp-user-enum -M VRFY -U /root/sectools/SecLists/Usernames/Names/names.txt -t 10.11.1.41` | SMTP Enum. `-M` for mode. `-U` for userlist. `-t` for target |
