@@ -41,8 +41,8 @@ Use these automated tools to save as much time as possible when enumerating vuln
 | 5 | `nmap -sC -sV -p- -vv -oA full 10.11.1.8` | Very long and aggressive TCP scan on target IP |
 
 ### Interesting Ports
-| --- | --- |
 | Port # | Description |
+| --- | --- |
 | 21 | FTP server, unencrypted. |
 | 22 | SSH server, can be connected to via SSH |
 | 23 | Telnet. Basically an unencrypted SSH |
