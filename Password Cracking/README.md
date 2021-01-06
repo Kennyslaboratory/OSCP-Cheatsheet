@@ -39,11 +39,11 @@ hashcat64 -m 500 hashes.txt -a 3 ?1?1?1?1?1?1?1?1 --increment -1 ?l?d?u
 ### Predefined Charsets
 | Key | Value |
 | --- | --- |
-| ?l | `abcdefghijklmnopqrstuvwxyz` |
-| ?u | `ABCDEFGHIJKLMNOPQRSTUVWXYZ` |
-| ?d | `0123456789` |
-| ?s | ```«space»!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~``` |
-| ?a | `?l?u?d?s` |
-| ?b | `0x00 - 0xff` |
+| ?l | abcdefghijklmnopqrstuvwxyz |
+| ?u | ABCDEFGHIJKLMNOPQRSTUVWXYZ |
+| ?d | 0123456789 |
+| ?s | «space»!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ |
+| ?a | ?l?u?d?s |
+| ?b | 0x00 - 0xff |
 
 
