@@ -1,3 +1,8 @@
+# Identifying Hash Type
+```
+hash-identifier
+```
+
 # Cracking Passwords
 
 ## Password Cracking Tools
@@ -53,6 +58,20 @@ These agruments will force Hashcat to use the CUDA GPU interface which is buggy 
 | 10600	| PDF 1.7 Level 3 (Acrobat 9)	| Documents |
 | 10700	| PDF 1.7 Level 8 (Acrobat 10 - 11)	| Documents |
 | 16200	| Apple Secure Notes | Documents | 
+
+## Cracking Database Passwords
+| ID | Description | Type | Example Hash |
+| --- | --- | --- | --- |
+| 12 | PostgreSQL |	Database Server	a6343a68d964ca596d9752250d54bb8a:postgres |
+| 131 | MSSQL (2000) | Database Server | 0x01002702560500000000000000000000000000000000000000008db43dd9b1972a636ad0c7d4b8c515cb8ce46578 |
+| 132 | MSSQL (2005) | Database Server |0x010018102152f8f28c8499d8ef263c53f8be369d799f931b2fbe |
+| 1731 | MSSQL (2012, 2014) | Database Server	| 0x02000102030434ea1b17802fd95ea6316bd61d2c94622ca3812793e8fb1672487b5c904a45a31b2ab4a78890d563d2fcf5663e46fe797d71550494be50cf4915d3f4d55ec375 |
+| 200	| MySQL323 | Database Server | 7196759210defdc0 |
+| 300	| MySQL4.1/MySQL5 | Database Server | fcf7c1b8749cf99d88e5f34271d636178fb5d130 |
+| 3100 | Oracle H: Type (Oracle 7+) |	Database Server	| 7A963A529D2E3229:3682427524 |
+| 112 | Oracle S: Type (Oracle 11+) |	Database Server	| ac5f1e62d21fd0529428b84d42e8955b04966703:38445748184477378130 |
+| 12300 | Oracle T: Type (Oracle 12+)	| Database Server |	78281A9C0CF626BD05EFC4F41B515B61D6C4D95A250CD4A605CA0EF97168D670EBCB5673B6F5A2FB9CC4E0C0101E659C0C4E3B9B3BEDA846CD15508E88685A2334141655046766111066420254008225 |
+| 8000 | Sybase ASE	Database Server	0xc00778168388631428230545ed2c976790af96768afa0806fe6c0da3b28f3e132137eac56f9bad027ea2 |
 
 ## Crack a Zip Password
 
