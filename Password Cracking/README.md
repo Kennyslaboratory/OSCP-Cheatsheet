@@ -32,10 +32,7 @@ zip2john seems to accept a wider range of zip formats for cracking.
 
 ## Bruteforcing with Hashcat
 When all else fails, go for a bruteforce.
-Brute force all passwords length 1-8 with possible characters A-Z a-z 0-9:
-```
-hashcat64 -m 500 hashes.txt -a 3 ?1?1?1?1?1?1?1?1 --increment -1 ?l?d?u
-```
+
 ### Predefined Charsets
 | Key | Value |
 | --- | --- |
@@ -45,5 +42,10 @@ hashcat64 -m 500 hashes.txt -a 3 ?1?1?1?1?1?1?1?1 --increment -1 ?l?d?u
 | ?s | «space»!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ |
 | ?a | ?l?u?d?s |
 | ?b | 0x00 - 0xff |
+
+Brute force all passwords length 1-8 with possible characters A-Z a-z 0-9:
+```
+hashcat64 -m 500 hashes.txt -a 3 ?1?1?1?1?1?1?1?1 --increment -1 ?l?d?u
+```
 
 
