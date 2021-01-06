@@ -150,4 +150,21 @@ Brute force all passwords length 1-8 with possible characters A-Z a-z 0-9:
 hashcat64 -m 500 hashes.txt -a 3 ?1?1?1?1?1?1?1?1 --increment -1 ?l?d?u
 ```
 
+# PRINCE Password Generation
+PRINCE (PRobability INfinite Chained Elements) is a hashcat utility for randomly generating probable passwords:
+```
+pp64.bin --pw-min=8 < dict.txt | head -20 shuf dict.txt | pp64.bin --pw-min=8 | head -20
+```
+**Reference:**
+https://github.com/hashcat/princeprocessor
 
+# Purple Rain
+Purple Rain attack uses a combination of Prince, a dictionary and random Mutation rules to dynamicaly create infinite combinations of passwords.
+```
+shuf dict.txt | pp64.bin --pw-min=8 | hashcat -a 0 -m #type -w 4 -O hashes.txt -g 300000
+```
+**Reference:**
+https://www.netmux.com/blog/purple-rain-attack
+
+**Special Thanks to:**
+[frizb](https://github.com/frizb/Hashcat-Cheatsheet)
