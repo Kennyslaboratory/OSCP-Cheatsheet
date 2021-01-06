@@ -30,10 +30,25 @@ Hashcat appears to have issues with some zip hash formats generated from zip2joh
 
 zip2john seems to accept a wider range of zip formats for cracking.
 
+## Cracking Linux Hashes - /etc/shadow file
+| ID | Description |
+| --- | --- |
+| 500 |	md5crypt $1$, MD5(Unix)
+| 200 |	bcrypt $2*$, Blowfish(Unix)
+| 400	| sha256crypt $5$, SHA256(Unix)
+| 1800 |	sha512crypt $6$, SHA512(Unix)
+
+
+## Cracking Windows Hashes
+| ID | Description |
+| --- | --- |
+| 3000 | LM |
+| 1000 | NTLM |
+
 ## Bruteforcing with Hashcat
 When all else fails, go for a bruteforce.
 
-### Predefined Charsets
+### Hashcat Predefined Charsets
 | Key | Value |
 | --- | --- |
 | ?l | abcdefghijklmnopqrstuvwxyz |
