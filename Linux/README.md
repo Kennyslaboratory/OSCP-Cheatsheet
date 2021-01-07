@@ -9,7 +9,9 @@
 
 
 ### Post Exploitation - Privilage Escalation
-Automated Enumeration Tools:
+*Automated Tools:*
+| Tool | Description |
+| [LinPEASS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS) | A script that search for possible paths to escalate privileges on Linux/Unix |
 
 
 ## Manual Privilage Escalation
@@ -23,6 +25,12 @@ lsb_release -a 2>/dev/null
 If you have **write permissions on any folder inside the ``PATH`` variable** you may be able to hijacking some libraries or binaries:
 ```
 echo $PATH
+```
+
+*Checking Environment Variables*
+Looking for interesting information, passwords or API keys in the environment variables.
+```
+(env || set) 2>/dev/null
 ```
 
 *Enumerate Misconfigured `sudo`*
@@ -45,6 +53,26 @@ exec('[COMMAND]', function (error, stdOut, stdErr) {
 console.log(stdOut);
 });
 ```
+
+*Kernel Exploits*
+Check the Kernel version for a possible CVE.
+```
+cat /proc/version
+uname -a
+```
+
+*Searching for an exploit via SearchSploit*
+```
+searchsploit "Linux Kernel"
+```
+
+*Resources with Compiled Kernel Exploits*
+| # | Resource | Description |
+| --- | --- | --- |
+| 1 | [Lucyoa's Github](https://github.com/lucyoa/kernel-exploits) | Linux Kernel Exploited, Precompiled. |
+| 2 | [bwbwbwbw's GitHub](https://github.com/bwbwbwbw/linux-exploit-binaries) | List of very common Linux Kernel Exploits, Precompiled. |
+| 3 | [Kabot's Privilege Escalation Packs](https://github.com/Kabot/Unix-Privilege-Escalation-Exploits-Pack) | Another lsit of Linux Kernel Exploits, Precompiled. |
+
 
 # Resources Referenced
 *Special Thanks to:*
