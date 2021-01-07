@@ -11,6 +11,7 @@
 ### Post Exploitation - Privilage Escalation
 *Automated Tools:*
 | Tool | Description |
+| --- | --- |
 | [LinPEASS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS) | A script that search for possible paths to escalate privileges on Linux/Unix |
 
 
