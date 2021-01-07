@@ -54,7 +54,7 @@ console.log(stdOut);
 });
 ```
 
-*Kernel Exploits*
+## Kernel Exploits
 Check the Kernel version for a possible CVE.
 ```
 cat /proc/version
