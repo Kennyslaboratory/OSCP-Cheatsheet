@@ -12,7 +12,7 @@ hash-identifier
 | 2 | John-the-Ripper | Alternative offline password cracker. |
 | 3 | Hydra | Popular tool for doing online password brute forcing. |
 
-## Utilizing GPU & CPU fore cracking
+## Utilizing GPU & CPU for cracking
 These agruments will force Hashcat to use the CUDA GPU interface which is buggy but provides more performance. (–force) will Optimize for 32 characters or less passwords (-O) and will set the workload to "Insane" (-w 4) which is supposed to make your computer effectively unusable during the cracking process. Finally "--opencl-device-types 1,2 " will force HashCat to use BOTH the GPU and the CPU to handle the cracking.
 ```
 --force -O -w 4 --opencl-device-types 1,2
