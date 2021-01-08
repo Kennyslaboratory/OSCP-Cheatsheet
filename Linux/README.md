@@ -70,7 +70,7 @@ searchsploit "Linux Kernel"
 *Resources with Compiled Kernel Exploits*
 | # | Resource | Description |
 | --- | --- | --- |
-| 1 | [Lucyoa's Github](https://github.com/lucyoa/kernel-exploits) | Linux Kernel Exploited, Precompiled. |
+| 1 | [Lucyoa's Github](https://github.com/lucyoa/kernel-exploits) | Linux Kernel Exploits, Precompiled. |
 | 2 | [bwbwbwbw's GitHub](https://github.com/bwbwbwbw/linux-exploit-binaries) | List of very common Linux Kernel Exploits, Precompiled. |
 | 3 | [Kabot's Privilege Escalation Packs](https://github.com/Kabot/Unix-Privilege-Escalation-Exploits-Pack) | Another lsit of Linux Kernel Exploits, Precompiled. |
 
